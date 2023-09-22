@@ -72,7 +72,7 @@ Terdapat beberapa clue yang diberikan dari deskripsi tersebut, yaitu:
 Dari clue tersebut, didapatkan perintah untuk melakukan substitusi pada source adress packet 7812 menggunakan metode cipher a1z26. Source address pada packet 7812 adalah 104.18.14.101, jika dipisah sesuai rentang 1-26 didapatkan 10 4 18 14 10 1. Angka-angka tersebut jika disubstitusi menjadi huruf maka didapat JDRNJA.
 
 **FLAG**
-![Screenshot 2023-09-21 184849](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/5e79f20a-953c-4ca4-a928-9027026929ff)
+![Screenshot 2023-09-21 184849](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/38100d32-de2e-478d-920f-f82c965697ca)
 
 ## 7
 ### Soal
@@ -80,10 +80,12 @@ Berapa jumlah packet yang menuju IP 184.87.193.88?
 
 ### Jawaban
 Filtering dengan query `ip.dst == 184.87.193.88` diperoleh hasil 6 packet sebagai berikut:
-![Screenshot 2023-09-18 190644](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/4f92131a-a95a-433c-80b5-cc58a6aecaf6)
+![Screenshot 2023-09-18 190644](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/00d81d6c-4139-4b95-be4d-6209e71581b7)
+
 
 **FLAG**
-![Screenshot 2023-09-18 190800](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/259e25ca-09f5-4911-8571-aaf8e95643e5)
+![Screenshot 2023-09-18 190800](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/ac4f912a-d640-4432-a997-cd1c5f2afdf8)
+
 
 ## 8
 ### Soal
@@ -93,7 +95,7 @@ Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yan
 Query adalah sebagai berikut: `tcp.dstport == 80 || udp.dstport == 80`.
 
 **FLAG**
-![Screenshot 2023-09-18 191533](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/efee87e5-9ce7-486f-a127-7c4982eef183)
+![Screenshot 2023-09-18 191533](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/73d6f8da-457b-4448-baf5-be54729eb2a2)
 
 ## 9
 ### Soal
@@ -103,7 +105,7 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 Query adalah sebagai berikut: `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`.
 
 **FLAG**
-![Screenshot 2023-09-18 200607](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/1a288d8a-ad42-4caa-9a3d-67a4bbb55706)
+![Screenshot 2023-09-18 200607](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/2199aa3b-c052-40e2-b794-bc8e56eb9460)
 
 ## 10
 ### Soal
@@ -111,8 +113,13 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet!
 
 ### Jawaban
 Filtering dengan query `telnet contains "Login"` lalu follow TCP stream, didapatkan hasil username dan password sebagai berikut:
-![Screenshot 2023-09-18 194550](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/52d3c045-d2ae-48fb-ab68-95f66d0912fa)
-![Screenshot 2023-09-18 194612](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/1aba0919-5005-4660-b0cd-d3a42c8516a6)
+![Screenshot 2023-09-18 194550](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/056e6b36-b89a-4574-b623-f126b8231437)
+![Screenshot 2023-09-18 194612](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/66d5cabb-34f8-484c-b71f-ec3fb7414eb0)
 
 **FLAG**
-![Screenshot 2023-09-18 194657](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/f6b0ee91-7088-4c44-a709-9ec43a028114)
+![Screenshot 2023-09-18 194657](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/4ed8dcc8-c8d0-46de-b43e-0c219da0eb94)
+
+
+![Screenshot 2023-09-18 213304](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/df994f2b-f814-4243-bfa6-0a242a345774)
+
+
