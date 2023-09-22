@@ -43,12 +43,22 @@ Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal be
 - Protokol layer transport apa yang digunakan?
 
 ### Jawaban
+Dapat mengunakan ```(ip.src == 239.255.255.250 || ip.dst == 239.255.255.250) && udp.port == 3702``` sesuai keterangan soal lalu cari banyak paket dan protocol
 
+![Alt text](<Screenshot 2023-09-22 191048.png>)
+
+**FLAG**
+![Alt text](<Screenshot 2023-09-22 191123.png>)
 ## 4
 ### Soal
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
-
 ### Jawaban
+Cari paket nomer 130 ```frame.number == 130``` lalu lihat checksum di header
+
+![Alt text](<Screenshot 2023-09-22 191812.png>)
+
+**FLAG**
+![Alt text](<Screenshot 2023-09-22 191941.png>)
 
 ## 5
 ### Soal
@@ -58,7 +68,11 @@ Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk men
 - Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
 
 ### Jawaban
-
+Pertama dapat membuka zip untuk mendapatkan ```NC``` untuk membuka zip dapat follow salah satu paket lalu di dencode di base64 dencoder. setelah itu dapat dilihat **packet yang berhasil di capture**,**port service SMTP**, dan **IP berapakah yang merupakan public IP**
+![Alt text](<Screenshot 2023-09-22 192205.png>)
+![Alt text](<Screenshot 2023-09-22 192221.png>)
+**FLAG**
+![Alt text](<Screenshot 2023-09-22 192422.png>)
 ## 6
 ### Soal
 Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
@@ -119,6 +133,11 @@ Filtering dengan query `telnet contains "Login"` lalu follow TCP stream, didapat
 **FLAG**
 ![Screenshot 2023-09-18 194657](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/4ed8dcc8-c8d0-46de-b43e-0c219da0eb94)
 
+## kendala
+Kendala pada pengerjaan adalah sebagai berikut:
+- Web sempat down dan sangat lemot pada jam-jam awal.
+- Bisa menggunakan VPN untuk membuka web praktikum, tetapi tidak bisa membuka Discord. Sehingga harus bolak-balik disconnect VPN agar bisa membaca announcement di Discord.
+- No 6 soal dukun.
 
 ![Screenshot 2023-09-18 213304](https://github.com/athraz/Jarkom-Modul-1-E14-2023/assets/96050618/df994f2b-f814-4243-bfa6-0a242a345774)
 
